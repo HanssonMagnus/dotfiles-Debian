@@ -1,12 +1,18 @@
 # dotfiles
 
 # Introduciton
-After a fresh intall of Debian + Xfce, here are instructions of how to configure the system.
+After a fresh intall of Debian + Xfce, here are instructions of how to configure the system. Note that apt installs dependencies by default, so e.g., `sudo apt-get install i3` installs dependencies and dmenu etc.
+
+# Run script
+* Clone the repositor to $HOME
+* cd into directory
+* chmod +x install
+* run script install
 
 # Things that you may want to do
 When installing Debian you can give your user sudo by not typing in a root password. However, if you typed in a root password you need to add your user to the sudo group.
 
-## To take away the option screen on boot:
+### To take away the option screen on boot:
 
 ```
 sudo vim /etc/default/grub
@@ -18,7 +24,7 @@ Set GRUB_TIMEOUT=0.
 sudo update-grub
 ```
 
-## Fan control with Nouveau drivers
+### Fan control with Nouveau drivers
 When running the [Nouveau](https://wiki.archlinux.org/index.php/Nouveau) free graphics drivers, the fans are spinning loudly at all temperatures. To change this,
 
 ```
@@ -34,7 +40,7 @@ yielding e.g.,
 
 Now you can change pwm1_enable to 0 (off), 1 (manual), or 2 (auto).
 
-## Proprietary Nvidia drivers
+### Proprietary Nvidia drivers
 It might be necessary to use the proprietary drivers for optimal performance, see [Debian wiki](https://wiki.debian.org/NvidiaGraphicsDrivers). This will also solve the loud fan problem.
 Identify your card with,
 
