@@ -35,7 +35,7 @@ yielding e.g.,
 Now you can change pwm1_enable to 0 (off), 1 (manual), or 2 (auto).
 
 ## Proprietary Nvidia drivers
-It might be necessary to use the proprietary drivers for optimal performance. This will also solve the loud fan problem.
+It might be necessary to use the proprietary drivers for optimal performance, see [Debian wiki](https://wiki.debian.org/NvidiaGraphicsDrivers). This will also solve the loud fan problem.
 Identify your card with,
 
 ```
