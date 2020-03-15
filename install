@@ -55,9 +55,9 @@ echo "Installing Ranger"
 sudo apt-get install ranger
 echo ""
 
-#echo "Installing Mpd and Ncmpcpp"
-#sudo apt-get install mpd ncmpcpp
-#echo ""
+echo "Installing Cmus"
+sudo apt-get install cmus
+echo ""
 
 echo "Installing Zathura"
 sudo apt-get install zathura zathura-djvu zathura-pdf-poppler
