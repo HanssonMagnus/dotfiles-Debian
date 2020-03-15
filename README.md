@@ -10,9 +10,21 @@ After a fresh intall of Debian + Xfce, here are instructions of how to configure
 * run script install
 
 # Dotfiles and git
-Sometimes dotfiles and dotdirectories are owned by root and ownership needs to be changed with `sudo chown -R group .` in order for git to be able to add, commit, and push. Likewise premissions might need to be changed with `sudo chmod -R 756 .`, and groups with `sudo chgrp -R group .`.
+Sometimes dotfiles and dotdirectories are owned by root and ownership needs to be changed with `sudo chown -R magnus:magnus .` in order for git to be able to add, commit, and push. Likewise premissions might need to be changed with `sudo chmod -R 756 .`, and groups with `sudo chgrp -R group .`.
 
 Furthermore, if there are cloned git repos in e.g. your .vim/plugged that can cause error when you try to `git add .`.
+
+# Configure Mpd and Ncmpcpp
+From my experience Mpd is by default running a global session and hence the config file in /etc/mpd.conf will be used and not one in your home directory. You could most certainly change this, or write a script that kills the session and opens a one pointing at the config file in the home directory. This is what I used before,
+```
+sudo service mpd stop
+mpd /home/magnus/.config/mpd/mpd.conf
+```
+However, recently I've just started to modify the /etc/mpd.conf file. Configuring the file,
+```
+sudo vim /etc/mpd.conf
+
+```
 
 # Things that you may want to do
 When installing Debian you can give your user sudo by not typing in a root password. However, if you typed in a root password you need to add your user to the sudo group.
