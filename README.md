@@ -1,7 +1,7 @@
 # dotfiles-Debian
 This is a repository for dotfiles and settings I use in Debian. The configuration should work with other Debian based distros.
 
-A visual of my current setup:
+A visual of my current setup with i3, Compton, and i3blocks:
 ![Fig 1](/Config_2020-03-15_23-03-46.png)
 
 # Introduciton
