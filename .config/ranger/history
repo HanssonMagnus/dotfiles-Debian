@@ -1,0 +1,29 @@
+mkdir playlists
+mkdir database
+mkdir pid
+mkdir state
+open_with sudo vim
+touch func_gmm.jl
+mkdir Star_wars
+mkdir Security
+mkdir Vpn
+touch mullvad_info.md
+mv mullvad_info.md ./Mullvad/mullvad_info.md
+grep m
+open_with 
+mkdir external_usb_1
+sudo mkdir external_usb_1
+touch .compton.conf
+open_with vim
+
+search i3
+search .conf
+shell cr
+mkdir Screenshots
+rm
+remove
+search bash
+search ranger
+search bashr
+search pro
+delete

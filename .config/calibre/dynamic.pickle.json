@@ -1,0 +1,16 @@
+{
+  "add books dialog dir": "/home/magnus/Documents/eBooks/Psychology", 
+  "database location dialog": "/home/magnus/Documents/eBooks/Calibre Library", 
+  "sort_history": [
+    [
+      "timestamp", 
+      false
+    ], 
+    [
+      "timestamp", 
+      false
+    ]
+  ], 
+  "welcome_wizard_device": "kobo_vox", 
+  "welcome_wizard_was_run": true
+}

@@ -9,6 +9,9 @@ After a fresh intall of Debian + Xfce, here are instructions of how to configure
 * chmod +x install
 * run script install
 
+# Dotfiles and git
+Sometimes dotfiles and dotdirectories are owned by root and ownership needs to be changed with `sudo chown -R group .` in order for git to be able to add, commit, and push. Likewise premissions might need to changed with `sudo chmod -R 756 .`, and groups with `sudo chgrp -R group .`.
+
 # Things that you may want to do
 When installing Debian you can give your user sudo by not typing in a root password. However, if you typed in a root password you need to add your user to the sudo group.
 

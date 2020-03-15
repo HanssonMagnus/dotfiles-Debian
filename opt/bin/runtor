@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Reading the Tor .desktop file, it says:
+# When invoked from the shell, this file must always be in a Tor
+# Browser root directory.
+# Thus, it cannot be run by export Path to the .bashrc
+cd $HOME/opt/tor-browser-linux64-8.5.5_en-US/tor-browser_en-US
+./start-tor-browser.desktop
