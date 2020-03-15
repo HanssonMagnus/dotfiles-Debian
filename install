@@ -14,6 +14,7 @@ cp -r .fonts/ ../
 cp .bashrc ../
 cp .vimrc ../
 cp .Xdefaults ../
+cp .profile ../
 echo ""
 
 # Install required programs
@@ -42,9 +43,9 @@ echo "Installing Ranger"
 sudo apt-get install ranger
 echo ""
 
-echo "Installing Mpd and Ncmpcpp"
-sudo apt-get install mpd ncmpcpp
-echo ""
+#echo "Installing Mpd and Ncmpcpp"
+#sudo apt-get install mpd ncmpcpp
+#echo ""
 
 echo "Installing Zathura"
 sudo apt-get install zathura zathura-djvu zathura-pdf-poppler
