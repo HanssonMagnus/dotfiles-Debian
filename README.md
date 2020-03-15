@@ -3,6 +3,9 @@
 # Introduciton
 After a fresh intall of Debian + Xfce, here are instructions of how to configure the system. Note that apt installs dependencies by default, so e.g., `sudo apt-get install i3` installs dependencies and dmenu etc.
 
+# Install Debian
+Either you can install the regular (free software) version of Debian or you can install the [non free version](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/). This depends on your hardware and requirements.
+
 # Run script
 * Clone the repositor to $HOME
 * cd into directory
