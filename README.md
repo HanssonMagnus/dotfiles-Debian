@@ -25,6 +25,25 @@ Sometimes dotfiles and dotdirectories are owned by root and ownership needs to b
 Furthermore, if there are cloned git repos in e.g. your .vim/plugged that can cause error when you try to `git add .`.
 
 # Configuring music players
+
+### Configure input and output devices
+Check what output devices you have,
+```
+pacmd list-sinks
+```
+Set the default output sink,
+```
+pacmd set-default-sink "SINKNAME"
+```
+Check what input devices you have,
+```
+pact1 list | grep alsa_input
+```
+Set the default input device,
+```
+pacmd set-default-source "DEVICE NAME"
+```
+
 ### Configure Mpd and Ncmpcpp
 From my experience Mpd is by default running a global session and hence the config file in /etc/mpd.conf will be used and not one in your home directory. You could most certainly change this, or write a script that kills the session and opens a one pointing at the config file in the home directory. This is what I used before,
 ```
