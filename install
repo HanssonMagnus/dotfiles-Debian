@@ -9,7 +9,7 @@ echo ""
 
 # Move config directories
 echo "Moving Config Directories"
-cp -r .config/ ../
+#cp -r .config/ ../
 cp -r .fonts/ ../
 cp .bashrc ../
 cp .vimrc ../
