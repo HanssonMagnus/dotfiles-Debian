@@ -35,10 +35,10 @@ However, recently I've just started to modify the /etc/mpd.conf file.
 ### Non-daemon CLI music players
 If you think it's overkill to run a daemon for music (mpd), you can instead run a CLI music player. Some examples are CMus (a good option), Moc, and mp3blaster.
 
-# Things that you may want to do
+# You may want to do after installing Debian
 When installing Debian you can give your user sudo by not typing in a root password. However, if you typed in a root password you need to add your user to the sudo group.
 
-### To take away the option screen on boot:
+### Take away the option screen on boot:
 
 ```
 sudo vim /etc/default/grub
