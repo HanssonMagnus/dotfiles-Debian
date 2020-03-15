@@ -10,6 +10,7 @@ Either you can install the regular (free software) version of Debian or you can 
 sudo umount /dev/sdX
 sudo dd if=/path/to/debian.iso of=/dev/sdX bs=4M && sync
 ```
+(Note that you should locate e.g. sdb and not sdb1.)
 
 # Run script
 * Clone the repositor to $HOME
@@ -22,17 +23,17 @@ Sometimes dotfiles and dotdirectories are owned by root and ownership needs to b
 
 Furthermore, if there are cloned git repos in e.g. your .vim/plugged that can cause error when you try to `git add .`.
 
-# Configure Mpd and Ncmpcpp
+# Configuring music players
+### Configure Mpd and Ncmpcpp
 From my experience Mpd is by default running a global session and hence the config file in /etc/mpd.conf will be used and not one in your home directory. You could most certainly change this, or write a script that kills the session and opens a one pointing at the config file in the home directory. This is what I used before,
 ```
 sudo service mpd stop
 mpd /home/magnus/.config/mpd/mpd.conf
 ```
-However, recently I've just started to modify the /etc/mpd.conf file. Configuring the file,
-```
-sudo vim /etc/mpd.conf
+However, recently I've just started to modify the /etc/mpd.conf file.
 
-```
+### Non-daemon CLI music players
+If you think it's overkill to run a daemon for music (mpd), you can instead run a CLI music player. Some examples are CMus (a good option), Moc, and mp3blaster.
 
 # Things that you may want to do
 When installing Debian you can give your user sudo by not typing in a root password. However, if you typed in a root password you need to add your user to the sudo group.
