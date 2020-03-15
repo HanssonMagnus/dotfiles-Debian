@@ -14,10 +14,10 @@ sudo dd if=/path/to/debian.iso of=/dev/sdX bs=4M && sync
 (Note that you should locate e.g. sdb and not sdb1.)
 
 # Run script
-* Clone the repositor to $HOME
+* Clone the repositor to ~/Git/github or your dir of choice
 * cd into directory
 * chmod +x install
-* run script install
+* run script ./install
 
 # Dotfiles and git
 Sometimes dotfiles and dotdirectories are owned by root and ownership needs to be changed with `sudo chown -R magnus:magnus .` in order for git to be able to add, commit, and push. Likewise premissions might need to be changed with `sudo chmod -R 756 .`, and groups with `sudo chgrp -R group .`.
