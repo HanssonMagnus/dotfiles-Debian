@@ -35,6 +35,10 @@ echo "Installing i3"
 sudo apt-get install i3
 echo ""
 
+echo "Installing Feh"
+sudo apt-get install feh
+echo ""
+
 echo "Installing urxvt 256"
 sudo apt-get install rxvt-unicode-256color
 echo ""
