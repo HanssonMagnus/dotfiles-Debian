@@ -8,7 +8,7 @@ A visual of my current setup:
 After a fresh intall of Debian + Xfce, here are instructions of how to configure the system. Note that apt installs dependencies by default, so e.g., `sudo apt-get install i3` installs dependencies and dmenu etc.
 
 # Install Debian
-Either you can install the regular (free software) version of Debian or you can install the [non free version](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/). This depends on your hardware and requirements. Download the iso and burn it to an usb,
+Either you can install [the regular](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/) (free software) version of Debian or you can install the [non free version](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/). This depends on your hardware and requirements. I usually go with the free version and then add specific non free packages if I need to. Download the iso and burn it to an usb,
 
 ```
 sudo umount /dev/sdX
