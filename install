@@ -63,4 +63,10 @@ echo "Installing Tldr"
 sudo apt-get install tldr
 echo ""
 
+echo "Installing Cowsay"
+sudo apt-get install cowsay
+echo ""
+
+echo "Congratulations! Your GNU/Linux configuration is all done!" | cowsay -f tux
+
 
