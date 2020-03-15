@@ -1,4 +1,5 @@
-# dotfiles
+# dotfiles-Debian
+This is a repository for dotfiles and settings I use in Debian. The configuration should work with other Debian based distros.
 
 # Introduciton
 After a fresh intall of Debian + Xfce, here are instructions of how to configure the system. Note that apt installs dependencies by default, so e.g., `sudo apt-get install i3` installs dependencies and dmenu etc.
