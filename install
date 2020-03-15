@@ -35,6 +35,14 @@ echo "Installing i3"
 sudo apt-get install i3
 echo ""
 
+echo "Installing i3blocks"
+sudo apt-get install i3blocks
+echo ""
+
+echo "Installing Compton"
+sudo apt-get install compton
+echo ""
+
 echo "Installing Feh"
 sudo apt-get install feh
 echo ""
@@ -61,6 +69,10 @@ echo ""
 
 echo "Installing Tldr"
 sudo apt-get install tldr
+echo ""
+
+echo "Installing Neofetch"
+sudo apt-get install neofetch
 echo ""
 
 echo "Installing Cowsay"
