@@ -9,12 +9,12 @@ echo ""
 
 # Move config directories
 echo "Moving Config Directories"
-#cp -r .config/ ../
-cp -r .fonts/ ../
-cp .bashrc ../
-cp .vimrc ../
-cp .Xdefaults ../
-cp .profile ../
+#cp -r .config/ $HOME
+cp -r .fonts/ $HOME
+cp .bashrc $HOME
+cp .vimrc $HOME
+cp .Xdefaults $HOME
+cp .profile $HOME
 echo ""
 
 # Install required programs
