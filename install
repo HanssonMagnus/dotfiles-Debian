@@ -63,6 +63,10 @@ echo "Installing Zathura"
 sudo apt-get install zathura zathura-djvu zathura-pdf-poppler
 echo ""
 
+echo "Installing Vlc"
+sudo apt-get install vlc
+echo ""
+
 echo "Installing Git"
 sudo apt-get install git
 echo ""
