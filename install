@@ -91,6 +91,10 @@ echo "Installing Autocutsel"
 sudo apt-get install autocutsel
 echo ""
 
+echo "Installing Qbittorrent"
+sudo apt-get install qbittorrent
+echo ""
+
 echo "Congratulations! Your GNU/Linux configuration is all done!" | cowsay -f tux
 
 
