@@ -115,3 +115,10 @@ sudo apt-get install nvidia-driver
 sudo poweroff
 ```
 
+### Mouse sensitivity in Debian
+Xset doesn't natively work to set mouse sensitivity, xinput is what have to be used (which is not installed by default in Debian 10). To list your devices, list properties for device 2, and change them to half the speed for device "Primax Kensington Eagle Trackball",
+```
+xinput list
+xinput -list-props 2
+xinput -set-prop "Primax Kensington Eagle Trackball" "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
+```
