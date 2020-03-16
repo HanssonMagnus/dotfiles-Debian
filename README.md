@@ -123,3 +123,11 @@ xinput -list-props 2
 xinput -set-prop "Primax Kensington Eagle Trackball" "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
 ```
 Note that these changed reset at reboot, thus they should be added to either an Xsession config or executed at startup with e.g. i3 config.
+
+### Copying and pasting
+There are different mechanisms for copying and pasting in the X window system. There is the "primary selection" and then there's several key bindings (e.g. ctrl+c/v) that programs use. E.g. urxvt uses primary selection with copy at "ctrl+insert" and paste at "shift+insert". This means that if you copy something from e.g. Firefox with "ctrl+c" you cannot directly paste it in urxvt.
+
+One way to join the primary selection and the clipboard is to use a program such as [Autocutsel](http://www.nongnu.org/autocutsel/), and at startup run,
+```
+autocutsel -s PRIMARY -fork
+```
