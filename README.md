@@ -122,3 +122,4 @@ xinput list
 xinput -list-props 2
 xinput -set-prop "Primax Kensington Eagle Trackball" "Coordinate Transformation Matrix" 0.5 0 0 0 0.5 0 0 0 1
 ```
+Note that these changed reset at reboot, thus they should be added to either an Xsession config or executed at startup with e.g. i3 config.
