@@ -151,3 +151,14 @@ alias shutdown=sudo shutdown now
 alias reboot=sudo reboot
 ```
 
+### Change login screen
+In Debian based distribution to find which [display manager](https://wiki.debian.org/DisplayManager) you can look in /etc/X11/default-display-manager. It happens that I have [LightDM](https://wiki.debian.org/LightDM),
+```
+sudo which lightdm
+/usr/sbin/lightdm
+```
+To change the background of the login screen you can change to a .svg or .png file at /etc/lightdm/lightdm-gtk-greeter.conf as,
+```
+[greeter]
+background=/path/to/file.png
+```
