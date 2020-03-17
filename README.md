@@ -131,3 +131,23 @@ One way to join the primary selection and the clipboard is to use a program such
 ```
 autocutsel -s PRIMARY -fork
 ```
+### Change /etc/sudoers
+There are some programs that you perhaps want all users to be able to execute without sudo. I have changed my /etc/sudoers file so that I can run poweroff and reboot without sudo. Change the default editor in Debian to Vim (set to Nano by default) and then edit the /etc/sudoers file. The file must be edited with the 'visudo' command as root.
+
+```
+sudo update-alternatives --config editor
+sudo which shutdown
+sudo which poweroff
+sudo which reboot
+sudo visudo
+```
+Then add the following line to the file (with the correct paths),
+```
+magnus ALL=(ALL) NOPASSWD: /usr/sbin/shutdown, /usr/sbin/poweroff, /usr/sbin/reboot
+```
+Now you can, e.g., run "sudo shutdown" without the need to enter your password. Set an alias in your.bashrc file, e.g.,
+```
+alias shutdown=sudo shutdown now
+alias reboot=sudo reboot
+```
+
