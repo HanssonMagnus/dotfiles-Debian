@@ -157,8 +157,8 @@ In Debian based distribution to find which [display manager](https://wiki.debian
 sudo which lightdm
 /usr/sbin/lightdm
 ```
-To change the background of the login screen you can change to a .svg or .png file at /etc/lightdm/lightdm-gtk-greeter.conf as,
+To change the background of the login screen you can change to an image file at /etc/lightdm/lightdm-gtk-greeter.conf. At the Debian wiki it says you can choose either .svg or .png, however .jpg works as well. Add the following to the conf,
 ```
 [greeter]
-background=/path/to/file.png
+background=/path/to/file.jpg
 ```
