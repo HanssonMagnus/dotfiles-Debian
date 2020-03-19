@@ -95,6 +95,10 @@ echo "Installing Qbittorrent"
 sudo apt-get install qbittorrent
 echo ""
 
+echo "Installing TexLive"
+sudo apt-get install texlive-full
+echo ""
+
 echo "Congratulations! Your GNU/Linux configuration is all done!" | cowsay -f tux
 
 
