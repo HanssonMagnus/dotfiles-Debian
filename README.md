@@ -162,3 +162,12 @@ To change the background of the login screen you can change to an image file at 
 [greeter]
 background=/path/to/file.jpg
 ```
+
+### A note on installing unicode fonts for Urxvt
+```
+sudo apt-get install fonts-powerline
+```
+Then it's a bit unclear what happened here, but it turns out it's in the fontlist under the name "PowerlineSymbols",
+```
+fc-list | grep PowerlineSymbols
+```
