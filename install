@@ -17,31 +17,34 @@ cp .Xdefaults $HOME
 cp .profile $HOME
 echo ""
 
-# Install Curl
+# Install Packages
+
 echo "Installing Curl"
 sudo apt-get install curl
 echo ""
 
-# Installing libxft-dev
+# Required for installing st
 echo "Installing libxft-dev font drawing library"
 sudo apt-get install libxft-dev
 echo ""
 
-# Install Vim
 echo "Installing Vim"
 sudo apt-get install vim
 echo ""
 
-# Install Vim-gtk
 echo "Installing Vim-gtk"
 sudo apt-get install vim-gtk
 echo ""
 
-# Install Vim plugin manager
 echo "Installing Vim Pluging Manager"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo ""
 
+echo "Installing the Powerline Patched font Hack"
+sudo apt-get install fonts-hack-ttf
+echo ""
+
+# Maybe unnecessary since I have Hack font
 echo "Installing Powerline Fonts"
 sudo apt-get install fonts-powerline
 echo ""
@@ -60,10 +63,6 @@ echo ""
 
 echo "Installing Feh"
 sudo apt-get install feh
-echo ""
-
-echo "Installing urxvt 256"
-sudo apt-get install rxvt-unicode-256color
 echo ""
 
 echo "Installing Ranger"
