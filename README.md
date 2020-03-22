@@ -29,6 +29,22 @@ Sometimes dotfiles and dotdirectories are owned by root and ownership needs to b
 
 Furthermore, if there are cloned git repos in e.g. your .vim/plugged that can cause error when you try to `git add .`. So you should clone them with git submodules.
 
+# Installing St
+Download St from https://st.suckless.org/ and extract it into $HOME/st. In the README it says how to install it. The installation requires Xlib header files, in Debian based distributions you need,
+
+```
+sudo apt-get install libxft-dev
+```
+
+If there is something else missing, you can potentially find that with, e.g.,
+
+```
+sudo apt-get install apt-file
+sudo apt-file update
+apt-file search X11/Xlib.h
+sudo apt install libx11-dev
+```
+
 # Configuring music players
 
 ### Configure input and output devices
