@@ -17,12 +17,17 @@ cp .Xdefaults $HOME
 cp .profile $HOME
 echo ""
 
-# Install required programs
-echo "Install Curl"
+# Install Curl
+echo "Installing Curl"
 sudo apt-get install curl
 echo ""
 
-# Install additional programs
+# Installing libxft-dev
+echo "Installing libxft-dev font drawing library"
+sudo apt-get install libxft-dev
+echo ""
+
+# Install Vim
 echo "Installing Vim"
 sudo apt-get install vim
 echo ""
@@ -32,7 +37,8 @@ echo "Installing Vim-gtk"
 sudo apt-get install vim-gtk
 echo ""
 
-echo "Installing Vim pluging Manager"
+# Install Vim plugin manager
+echo "Installing Vim Pluging Manager"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo ""
 
