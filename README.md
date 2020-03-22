@@ -29,7 +29,7 @@ Sometimes dotfiles and dotdirectories are owned by root and ownership needs to b
 
 Furthermore, if there are cloned git repos in e.g. your .vim/plugged that can cause error when you try to `git add .`. So you should clone them with git submodules.
 
-# Installing St
+# Installing st
 Download St from https://st.suckless.org/ and extract it into $HOME/st. In the README it says how to install it. The installation requires Xlib header files, in Debian based distributions you need,
 
 ```
@@ -56,6 +56,12 @@ patch -Np1 -i ~/st/patches/st-scrollback-0.8.2.diff
 patch -Np1 -i ~/st/patches/st-solarized-both-20190128-3be4cf1.diff
 sudo make clean install
 st
+```
+
+For unicode characters in st you want to install a "powerline patched font", this is , e.g., necessary if you want your font to be compatilbe with Vim Airline which uses PowerlineSymbols unicode. [Nerds fonts](https://github.com/ryanoasis/nerd-fonts) have several alternatives for fonts. I use the font called [Hack](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack), and it can be installed with,
+
+```
+sudo apt-get install fonts-hack-ttf
 ```
 
 # Configuring music players
@@ -198,11 +204,4 @@ To change the background of the login screen you can change to an image file at 
 background=/path/to/file.jpg
 ```
 
-### A note on installing unicode fonts for Urxvt
-```
-sudo apt-get install fonts-powerline
-```
-Then it's a bit unclear what happened here, but it turns out it's in the fontlist under the name "PowerlineSymbols",
-```
-fc-list | grep PowerlineSymbols
-```
+
