@@ -45,6 +45,19 @@ apt-file search X11/Xlib.h
 sudo apt install libx11-dev
 ```
 
+Now for the installation,
+
+```
+tar xf st-0.8.2.tar.gz
+cd st-0.8.2
+patch -Np1 -i ~/st/patches/st-solarized-both-20190128-3be4cf1.diff
+patch -Np1 -i ~/st/patches/st-alpha-0.8.2.diff
+patch -Np1 -i ~/st/patches/st-clipboard-0.8.2.diff
+patch -Np1 -i ~/st/patches/st-scrollback-0.8.2.diff
+sudo make clean install
+st
+```
+
 # Configuring music players
 
 ### Configure input and output devices
