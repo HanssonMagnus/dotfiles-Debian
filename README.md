@@ -151,7 +151,7 @@ sudo poweroff
 ```
 
 ### Non-free Firmware
-I have actually had Debian 10 crash a couple of times, with the error messages regarding the CPU. I do not know exactly what the error is, I have only heard that it has previously been problems with AMD Ryzen CPUs and some kernels. If this problem occurs, one idea is to install the non-free firmware including AMD proprietary CPU drivers.
+I have actually had Debian 10 crash a couple of times, with the error messages regarding the CPU. I do not know exactly what the error is, I have only heard that it has previously been problems with AMD Ryzen CPUs and some kernels. If this problem occurs, one idea is to install the non-free firmware including AMD proprietary CPU drivers. For more information see [this thread](https://community.amd.com/thread/225795).
 
 ```
 sudo apt-get install firmware-linux-nonfree
