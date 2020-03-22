@@ -144,6 +144,12 @@ sudo apt-get install nvidia-driver
 sudo poweroff
 ```
 
+### Non-free Firmware
+I have actually had Debian 10 crash a couple of times, with the error messages regarding the CPU. I do not know exactly what the error is, I have only heard that it has previously been problems with AMD Ryzen CPUs and some kernels. If this problem occurs, one idea is to install the non-free firmware including AMD proprietary CPU drivers.
+
+```
+sudo apt-get install firmware-linux-nonfree
+```
 ### Mouse sensitivity in Debian
 Xset doesn't natively work to set mouse sensitivity, xinput is what have to be used (which is not installed by default in Debian 10). To list your devices, list properties for device 2, and change them to half the speed for device "Primax Kensington Eagle Trackball",
 ```
