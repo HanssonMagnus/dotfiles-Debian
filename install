@@ -17,7 +17,11 @@ cp .Xdefaults $HOME
 cp .profile $HOME
 echo ""
 
-# Install Packages
+# Install Packages:
+
+################################################################################
+# General system applications
+################################################################################
 
 echo "Installing Curl"
 sudo apt-get install curl
@@ -109,6 +113,32 @@ echo "Installing Qbittorrent"
 sudo apt-get install qbittorrent
 echo ""
 
+
+################################################################################
+# For Python
+################################################################################
+
+
+################################################################################
+# For JavaScript
+################################################################################
+# Debian repo has version 10.x thus,
+echo "Installing NodeJS"
+curl -sL https://deb.nodesource.com/setup_13.x | bash -
+apt-get install -y nodejs
+echo ""
+
+echo "Installing Npm"
+sudo apt-get install npm
+echo ""
+
+echo "Installing Livedown"
+sudo npm install -g livedown
+echo ""
+
+################################################################################
+# LaTeX
+################################################################################
 echo "Installing TexLive"
 sudo apt-get install texlive-full
 echo ""
