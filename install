@@ -40,6 +40,10 @@ echo "Installing Vim-gtk"
 sudo apt-get install vim-gtk
 echo ""
 
+echo "Installing Vim-gtk3"
+sudo apt-get install vim-gtk3
+echo ""
+
 echo "Installing Vim Pluging Manager"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo ""
