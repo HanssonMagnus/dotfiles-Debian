@@ -117,6 +117,9 @@ echo "Installing Qbittorrent"
 sudo apt-get install qbittorrent
 echo ""
 
+echo "Installing Tree"
+sudo apt-get install tree
+echo ""
 
 ################################################################################
 # For Python
