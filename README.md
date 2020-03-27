@@ -156,6 +156,11 @@ I have actually had Debian 10 crash a couple of times, with the error messages r
 ```
 sudo apt-get install firmware-linux-nonfree
 ```
+### Update on AMD Ryzen crash
+Installing drivers seems not to be enough. It seems to be a power bug, after I changed "PowerSupplyIdle" from Auto to Typical in my BIOS, I haven't had any more issues.
+
+The reason why I did not have any problems on Ubuntu, I think, is beacuse I was running version 18, which ran a kernel where this bug wasn't present.
+
 ### Mouse sensitivity in Debian
 Xset doesn't natively work to set mouse sensitivity, xinput is what have to be used (which is not installed by default in Debian 10). To list your devices, list properties for device 2, and change them to half the speed for device "Primax Kensington Eagle Trackball",
 ```
