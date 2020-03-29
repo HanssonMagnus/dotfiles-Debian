@@ -3,8 +3,6 @@ This is a repository for dotfiles and settings I use in Debian. The configuratio
 
 A visual of my current setup with i3, Compton, and i3blocks:
 ![Fig 1](/debian_blue_1.png)
-![Fig 2](/debian_blue_2.png)
-![Fig 3](/Config_2020-03-15_23-03-46.png)
 
 # Introduciton
 After a fresh intall of Debian + Xfce, here are instructions of how to configure the system. Note that apt installs dependencies by default, so e.g., `sudo apt-get install i3` installs dependencies and dmenu etc.
