@@ -125,11 +125,23 @@ echo "Installing Qutebrowser"
 sudo apt-get install qutebrowser
 echo ""
 
+echo "Installing Autojump"
+sudo apt-get install autojump
+echo ""
+
+echo "Fzf"
+sudo apt-get install fzf
+echo ""
+
 ################################################################################
 # For Python
 ################################################################################
 echo "Installing Pip"
 sudo apt-get install python3-pip
+echo ""
+
+echo "Pip-installing Pipenv under user"
+pip3 install --user pipenv
 echo ""
 
 ################################################################################
