@@ -129,11 +129,15 @@ echo "Installing Autojump"
 sudo apt-get install autojump
 echo ""
 
-echo "Fzf"
+echo "Installing Fzf"
 sudo apt-get install fzf
 echo ""
 
-echo "Irssi"
+echo "Installing Unclutter"
+sudo apt-get install unclutter
+echo ""
+
+echo "Installing Irssi"
 sudo apt-get install irssi
 echo ""
 
