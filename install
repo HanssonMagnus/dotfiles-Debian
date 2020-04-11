@@ -152,6 +152,10 @@ echo "Pip-installing Pipenv under user"
 pip3 install --user pipenv
 echo ""
 
+echo "Installing python3-tk"
+sudo apt-get install python3-tk
+echo ""
+
 ################################################################################
 # For JavaScript
 ################################################################################
