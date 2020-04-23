@@ -141,6 +141,10 @@ echo "Installing Irssi"
 sudo apt-get install irssi
 echo ""
 
+echo "Installing Mdadm"
+sudo apt-get install mdadm
+echo ""
+
 ################################################################################
 # For Python
 ################################################################################
