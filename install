@@ -145,6 +145,10 @@ echo "Installing Mdadm"
 sudo apt-get install mdadm
 echo ""
 
+echo "Installing Rsync"
+sudo apt-get install rsync
+echo ""
+
 ################################################################################
 # For Python
 ################################################################################
