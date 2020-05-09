@@ -210,5 +210,7 @@ background=/path/to/file.jpg
 ### Change orientation of monitors
 If you want to change the orientation of your monitors you can do so with xrandr. However, the settings are a bit messy, and there is a fair chanse that if you have more than one monitor you might have some trouble. My recommendation is to use arandr. Open arandr, configure the monitors how you want them, then hit "save as", and choose a name. Now foo.sh has been saved in $HOME/.screenlayouts, cd in here and chmod +x. Then you can add exec_always $HOME/.screenlayout/foo.sh to your i3 config.
 
+Here is a youtube video showcasing: https://youtu.be/8-S0cWnLBKg?t=927
+
 
 
