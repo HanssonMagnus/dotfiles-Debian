@@ -1,29 +1,50 @@
-mkdir playlists
-mkdir database
-mkdir pid
-mkdir state
-open_with sudo vim
-touch func_gmm.jl
-mkdir Star_wars
-mkdir Security
-mkdir Vpn
-touch mullvad_info.md
-mv mullvad_info.md ./Mullvad/mullvad_info.md
-grep m
+search rese
+rename stackplot_for_thesis.py
+search opt
+rename my_thesis_compile
+mkdir advisory_council
+mkdir meetings
 open_with 
-mkdir external_usb_1
-sudo mkdir external_usb_1
-touch .compton.conf
-open_with vim
-
-search i3
-search .conf
-shell cr
-mkdir Screenshots
-rm
-remove
-search bash
-search ranger
-search bashr
-search pro
+rename 
+rename dex_price_discovery_thesis_version
+rename 0_main
+rename dex_price_discovery_thesis_version_anonymous
+search sp
+rename 2023-08-16-Ryzen-Stability-Issues.md
+rename professional
+mkdir academic
+rename academic
+rename cv_magnus_academic.tex
+cut
+mkdir cbdc_eth
+mkdir 1_abstract
+mkdir 2_intro
+mkdir 3_background
+rename background.tex
+mkdir 4_economic
+mkdir 5_technical
+6_discussion
+mkdir 6_discussion
+7_conclusion
+mkdir 7_conclusion
+rename economic.tex
+rename technical.tex
+rename discussion.tex
+rename conclusion.tex
+mkdir cmgh
+mkdir maxBet
+touch README.md
+rename kelly_criterion.md
+copy
+paste
 delete
+search syslog
+open_with vim
+rename DePhi Analytics
+mkdir simulation
+search disk
+search git
+mkdir dice
+touch dice.md
+mkdir coin_flip
+touch coin_flip.md

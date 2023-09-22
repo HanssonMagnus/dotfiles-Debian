@@ -1,0 +1,26 @@
+# Always extract audio
+-x
+
+# Specify audio format
+#--audio-format mp3
+--audio-format opus
+
+# Specify ffmpeg/avconv audio quality, insert a value between 0 (better) and 9 (worse)
+--audio-quality 0
+
+# Embed thubnail in the audio as cover art. Only works for mp3
+#--embed-thumbnail
+
+# Write thumbnail to disk
+#--write-thumbnail
+
+# Write metadata to the video file (also works for audio)
+--add-metadata
+--metadata-from-title "%(artist)s - %(title)s"
+
+#
+
+# Save to
+-o ~/Music/youtube-dl/%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s
+
+
